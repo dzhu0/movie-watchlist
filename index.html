@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Movie Watchlist</title>
+    <link rel="icon" href="./images/movie-roll-icon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="top">
+                <h1 class="header-title">Find your film</h1>
+                <a href="watchlist.html">My Watchlist</a>
+            </div>
+
+            <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass magnifying-glass-icon"></i>
+                <input
+                    type="text"
+                    placeholder="Enter movie title..."
+                    id="search-input"
+                    class="search-input">
+                <button id="search-btn" class="search-btn">Search</button>
+            </div>
+        </header>
+
+        <main id="movies" class="movies">
+            <div class="message-box">
+                <i class="fa-solid fa-film film-icon"></i>
+                <p class="message message-dark">Start exploring</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
