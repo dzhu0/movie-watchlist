@@ -1,5 +1,5 @@
 const API_KEY = "818c19ba"
-const URL = `http://www.omdbapi.com/?apikey=${API_KEY}&type=movie&`
+const URL = `https://www.omdbapi.com/?apikey=${API_KEY}&type=movie&`
 
 let watchlist = JSON.parse(localStorage.getItem('watchlist')) || []
 let inWatchlist = false
