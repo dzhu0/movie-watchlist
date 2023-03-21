@@ -101,7 +101,7 @@ function getNotFoundHtml() {
     return `
 <div class="message-box">
     <p class="message message-light">
-        Unable to find what you’re looking for. Please try another search.
+        Unable to find what you're looking for. Please try another search.
     </p>
 </div>`
 }
@@ -113,7 +113,9 @@ function getBtnHtml(id) {
 <button
     class="add-remove-btn"
     data-${inList ? "remove" : "add"}="${id}">
-        <i class="fa-solid fa-circle-${inList ? "minus" : "plus"} circle-icon"></i>
+        <i
+            class="fa-solid fa-circle-${inList ? "minus" : "plus"} circle-icon"
+            data-${inList ? "remove" : "add"}="${id}"></i>
         ${inList ? "Remove" : "Watchlist"}
 </button>`
 }
